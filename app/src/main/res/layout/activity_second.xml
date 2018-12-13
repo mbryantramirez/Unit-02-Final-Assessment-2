@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/second_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/second_text_color"
+        android:fontFamily="@string/second_textFont"
+        android:textSize="@dimen/second_act_textSize"
+        tools:text="THIS IS TEXT"
+        />
+
+</android.support.constraint.ConstraintLayout>
