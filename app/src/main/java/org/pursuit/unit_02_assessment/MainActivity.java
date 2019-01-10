@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity
     private Button submitButton;
     private TextView info;
 
+    /**
+     * Create a field of type int
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +70,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 RandomGame random = new RandomGame();
-                int randomNum = random.getRandomNumber();
+                int randomNum = 11;
                 int userNum = random.stringToInt(inputEditText.getText().toString());
                 if(random.checkGuess(userNum, randomNum)){
                     Intent intent = new Intent(v.getContext(), SecondActivity.class);
@@ -88,7 +92,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("TEXT1", inputEditText.getText().toString());
+        outState.putString("TEXT1", null);
     }
 
     @Override

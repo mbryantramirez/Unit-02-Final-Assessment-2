@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <!-- Cool but you didn't need to extract the string out for font family but I like
+    that you kept this in mind-->
     <TextView
         android:id="@+id/second_textView"
         android:layout_width="match_parent"

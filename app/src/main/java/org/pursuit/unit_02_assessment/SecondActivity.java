@@ -23,6 +23,9 @@ public class SecondActivity extends AppCompatActivity {
         outState.putString("TEXT", result);
     }
 
+    /**
+     * This should setText for the textview
+     */
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
